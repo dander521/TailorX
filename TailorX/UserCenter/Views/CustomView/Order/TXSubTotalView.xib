@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TXSubTotalView">
+            <rect key="frame" x="0.0" y="0.0" width="466" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHD-Yf-GDD">
+                    <rect key="frame" x="0.0" y="0.0" width="466" height="60"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3872987" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LeY-oT-Mk1">
+                            <rect key="frame" x="402" y="19" width="56" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="Jg8-Uf-B2n"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.96470588235294119" green="0.18431372549019609" blue="0.36862745098039218" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.10000000000000001" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JG7-7Z-4Sv">
+                            <rect key="frame" x="0.0" y="0.0" width="466" height="0.5"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="I05-uY-m9z"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="小计：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y14-kA-wtd">
+                            <rect key="frame" x="354" y="19" width="40" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="y1t-QS-uiD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JG7-7Z-4Sv" secondAttribute="trailing" id="8JW-G0-IKo"/>
+                        <constraint firstAttribute="height" constant="60" id="8cf-YB-Dzn"/>
+                        <constraint firstItem="JG7-7Z-4Sv" firstAttribute="leading" secondItem="lHD-Yf-GDD" secondAttribute="leading" id="CDr-7H-KWY"/>
+                        <constraint firstItem="LeY-oT-Mk1" firstAttribute="centerY" secondItem="lHD-Yf-GDD" secondAttribute="centerY" id="VAa-v9-93w"/>
+                        <constraint firstItem="y14-kA-wtd" firstAttribute="centerY" secondItem="lHD-Yf-GDD" secondAttribute="centerY" id="aAe-LO-lgd"/>
+                        <constraint firstAttribute="trailing" secondItem="LeY-oT-Mk1" secondAttribute="trailing" constant="8" id="huB-Sk-Dzs"/>
+                        <constraint firstItem="JG7-7Z-4Sv" firstAttribute="top" secondItem="lHD-Yf-GDD" secondAttribute="top" id="qRp-Uv-Gpa"/>
+                        <constraint firstItem="LeY-oT-Mk1" firstAttribute="leading" secondItem="y14-kA-wtd" secondAttribute="trailing" constant="8" id="zmz-J0-XQw"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lHD-Yf-GDD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="aY1-6l-TGK"/>
+                <constraint firstItem="lHD-Yf-GDD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aht-kB-LEQ"/>
+                <constraint firstAttribute="trailing" secondItem="lHD-Yf-GDD" secondAttribute="trailing" id="k3h-ry-wFI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subTotalLabel" destination="LeY-oT-Mk1" id="yNn-vf-3aN"/>
+            </connections>
+            <point key="canvasLocation" x="-42" y="37"/>
+        </view>
+    </objects>
+</document>

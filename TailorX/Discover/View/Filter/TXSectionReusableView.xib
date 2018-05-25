@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="H" id="U6b-Vx-4bR" customClass="TXSectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="59"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_tab_information_3.2.0" translatesAutoresizingMaskIntoConstraints="NO" id="5Pr-rj-nqX">
+                    <rect key="frame" x="1" y="18" width="22" height="22"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="性别" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wiO-AZ-HVI">
+                    <rect key="frame" x="29" y="19.5" width="33" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0mt-pl-szJ" userLabel="bgView">
+                    <rect key="frame" x="80" y="0.0" width="313" height="59"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_main_bottom_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="a9D-g9-kxM">
+                            <rect key="frame" x="290" y="22" width="15" height="15"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全部" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u2E-OD-5Yb">
+                            <rect key="frame" x="258" y="21" width="29" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="a9D-g9-kxM" firstAttribute="centerY" secondItem="0mt-pl-szJ" secondAttribute="centerY" id="0qN-gt-dfY"/>
+                        <constraint firstAttribute="trailing" secondItem="a9D-g9-kxM" secondAttribute="trailing" constant="8" id="Dfn-YQ-vAs"/>
+                        <constraint firstItem="u2E-OD-5Yb" firstAttribute="centerY" secondItem="0mt-pl-szJ" secondAttribute="centerY" id="Vxm-lJ-n88"/>
+                        <constraint firstItem="a9D-g9-kxM" firstAttribute="leading" secondItem="u2E-OD-5Yb" secondAttribute="trailing" constant="3" id="wco-2V-L0G"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="0mt-pl-szJ" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="80" id="AoP-1j-sOj"/>
+                <constraint firstAttribute="bottom" secondItem="0mt-pl-szJ" secondAttribute="bottom" id="EOU-hU-M59"/>
+                <constraint firstItem="wiO-AZ-HVI" firstAttribute="centerY" secondItem="5Pr-rj-nqX" secondAttribute="centerY" id="NSk-Is-w9a"/>
+                <constraint firstItem="5Pr-rj-nqX" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="1" id="P1U-Y0-Zvh"/>
+                <constraint firstAttribute="trailing" secondItem="0mt-pl-szJ" secondAttribute="trailing" id="cYF-mW-rmf"/>
+                <constraint firstItem="0mt-pl-szJ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="d2E-6f-qm0"/>
+                <constraint firstItem="5Pr-rj-nqX" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="k4l-bz-s4p"/>
+                <constraint firstItem="wiO-AZ-HVI" firstAttribute="leading" secondItem="5Pr-rj-nqX" secondAttribute="trailing" constant="6" id="xD9-eZ-xvS"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="0mt-pl-szJ" id="tVj-ud-rmI"/>
+                <outlet property="iconImgView" destination="5Pr-rj-nqX" id="ID5-KK-jjV"/>
+                <outlet property="markImgView" destination="a9D-g9-kxM" id="fPn-VM-h8o"/>
+                <outlet property="sectionTitleLabel" destination="wiO-AZ-HVI" id="niu-L7-BFU"/>
+            </connections>
+            <point key="canvasLocation" x="-3.5" y="-89.5"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="ic_main_bottom_arrow" width="15" height="15"/>
+        <image name="ic_tab_information_3.2.0" width="22" height="22"/>
+    </resources>
+</document>

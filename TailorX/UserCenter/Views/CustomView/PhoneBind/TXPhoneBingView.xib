@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TXPhoneBingView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="153"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogw-st-6Sy">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="142"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机号已绑定" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RxU-B7-igu">
+                            <rect key="frame" x="16" y="107" width="288" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="2Xh-JQ-avy"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.11372549019607843" green="0.11372549019607843" blue="0.14901960784313725" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_main_phone_binding" translatesAutoresizingMaskIntoConstraints="NO" id="hUd-OT-bkA">
+                            <rect key="frame" x="128" y="25" width="64" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="64" id="ATP-q4-3V3"/>
+                                <constraint firstAttribute="width" constant="64" id="p1J-Uz-jid"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="35"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="hUd-OT-bkA" firstAttribute="centerX" secondItem="ogw-st-6Sy" secondAttribute="centerX" id="5TC-El-ZRA"/>
+                        <constraint firstItem="hUd-OT-bkA" firstAttribute="top" secondItem="ogw-st-6Sy" secondAttribute="top" constant="25" id="NV9-cf-AA1"/>
+                        <constraint firstItem="RxU-B7-igu" firstAttribute="leading" secondItem="ogw-st-6Sy" secondAttribute="leading" constant="16" id="UPM-kA-Xg6"/>
+                        <constraint firstAttribute="trailing" secondItem="RxU-B7-igu" secondAttribute="trailing" constant="16" id="ZSe-4e-0bE"/>
+                        <constraint firstItem="RxU-B7-igu" firstAttribute="top" secondItem="hUd-OT-bkA" secondAttribute="bottom" constant="17.5" id="yiM-LA-zBc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ogw-st-6Sy" secondAttribute="trailing" id="4uZ-EZ-895"/>
+                <constraint firstItem="ogw-st-6Sy" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="R1E-N4-3m6"/>
+                <constraint firstItem="ogw-st-6Sy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fBY-x4-Yb6"/>
+                <constraint firstAttribute="bottom" secondItem="ogw-st-6Sy" secondAttribute="bottom" constant="11.5" id="lva-mM-uIk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="phoneImageView" destination="hUd-OT-bkA" id="uRj-EY-Adm"/>
+                <outlet property="phoneStatusLabel" destination="RxU-B7-igu" id="qOA-ag-yBz"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="39"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_main_phone_binding" width="64" height="64"/>
+    </resources>
+</document>

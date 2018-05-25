@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TXLoginTablCell" rowHeight="607" id="KGk-i7-Jjw" customClass="TXLoginTablCell">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="607"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="607"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyO-4S-NfF" userLabel="View1">
+                        <rect key="frame" x="25" y="1" width="363" height="71"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fif-BO-ofi">
+                                <rect key="frame" x="0.0" y="53.5" width="8" height="18"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done"/>
+                            </textField>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_main_right_3.2.1" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-PM-cmc">
+                                <rect key="frame" x="344" y="40" width="19" height="19"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.1333333333" blue="0.3723083895" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Mmw-PM-cmc" secondAttribute="bottom" constant="12" id="BiB-HR-SD1"/>
+                            <constraint firstAttribute="bottom" secondItem="fif-BO-ofi" secondAttribute="bottom" id="FVC-bd-UyJ"/>
+                            <constraint firstItem="fif-BO-ofi" firstAttribute="leading" secondItem="DyO-4S-NfF" secondAttribute="leading" id="MaI-6d-sGK"/>
+                            <constraint firstAttribute="trailing" secondItem="Mmw-PM-cmc" secondAttribute="trailing" id="VsP-BT-FZ4"/>
+                            <constraint firstAttribute="height" constant="71" id="jwz-xB-tHn"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5JG-Qt-Kov" userLabel="View2">
+                        <rect key="frame" x="25" y="82" width="363" height="71"/>
+                        <color key="backgroundColor" red="1" green="0.1333333333" blue="0.3723083895" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="71" id="G94-Zf-4sW"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUQ-of-lyc">
+                        <rect key="frame" x="321" y="173" width="67" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="忘记密码？">
+                            <color key="titleColor" red="0.20392156862745098" green="0.20392156862745098" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7GD-Lt-LcF">
+                        <rect key="frame" x="25" y="276.5" width="363" height="50"/>
+                        <color key="backgroundColor" red="1" green="0.23313781459999999" blue="0.46344736139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Fo0-5M-cQi"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="登 录">
+                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <state key="disabled" title="登录"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4f0-rM-V2q">
+                        <rect key="frame" x="25" y="173" width="69" height="28"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="去注册        ">
+                            <color key="titleColor" red="0.20392156859999999" green="0.20392156859999999" blue="0.2156862745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="DyO-4S-NfF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="ACQ-wv-tIL"/>
+                    <constraint firstAttribute="bottom" secondItem="7GD-Lt-LcF" secondAttribute="bottom" constant="280" id="EPv-OQ-BvQ"/>
+                    <constraint firstItem="5JG-Qt-Kov" firstAttribute="width" secondItem="DyO-4S-NfF" secondAttribute="width" id="EkA-H0-3zb"/>
+                    <constraint firstItem="5JG-Qt-Kov" firstAttribute="top" secondItem="DyO-4S-NfF" secondAttribute="bottom" constant="10" id="JTO-iz-Hf6"/>
+                    <constraint firstItem="7GD-Lt-LcF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="Lw4-gl-KYO"/>
+                    <constraint firstAttribute="trailing" secondItem="PUQ-of-lyc" secondAttribute="trailing" constant="25" id="Q7X-Gw-yeQ"/>
+                    <constraint firstItem="4f0-rM-V2q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="a6N-Ii-3I5"/>
+                    <constraint firstItem="4f0-rM-V2q" firstAttribute="centerY" secondItem="PUQ-of-lyc" secondAttribute="centerY" id="dgx-z2-G3t"/>
+                    <constraint firstAttribute="trailing" secondItem="DyO-4S-NfF" secondAttribute="trailing" constant="25" id="eTg-uO-w56"/>
+                    <constraint firstAttribute="trailing" secondItem="7GD-Lt-LcF" secondAttribute="trailing" constant="25" id="fbQ-bB-JYX"/>
+                    <constraint firstItem="PUQ-of-lyc" firstAttribute="top" secondItem="5JG-Qt-Kov" secondAttribute="bottom" constant="20" id="lFv-dw-wpW"/>
+                    <constraint firstItem="DyO-4S-NfF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="1" id="qJ8-Jn-3Xa"/>
+                    <constraint firstItem="DyO-4S-NfF" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qox-YG-BRj"/>
+                    <constraint firstItem="5JG-Qt-Kov" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="u9C-m1-IKO"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
+                        <integer key="value" value="3"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bottomLayout" destination="EPv-OQ-BvQ" id="78F-Q6-Zgw"/>
+                <outlet property="forgetBtn" destination="PUQ-of-lyc" id="2jv-5p-KA9"/>
+                <outlet property="loginBtn" destination="7GD-Lt-LcF" id="Uyc-lS-esA"/>
+                <outlet property="passwordBgView" destination="5JG-Qt-Kov" id="3om-cx-PKX"/>
+                <outlet property="phoneNumBgView" destination="DyO-4S-NfF" id="Uoa-WW-Uxt"/>
+                <outlet property="phoneNumMarkImgView" destination="Mmw-PM-cmc" id="rBk-fo-0hQ"/>
+                <outlet property="registerBtn" destination="4f0-rM-V2q" id="6Er-nd-Jcp"/>
+                <outlet property="topLayout" destination="lFv-dw-wpW" id="uMC-8G-L1D"/>
+            </connections>
+            <point key="canvasLocation" x="-597" y="-234"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_main_right_3.2.1" width="19" height="19"/>
+    </resources>
+</document>

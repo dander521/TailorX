@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="TXAppointView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPI-Kl-kHd">
+                    <rect key="frame" x="53.5" y="145" width="213" height="278"/>
+                    <subviews>
+                        <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_appoint_designer" translatesAutoresizingMaskIntoConstraints="NO" id="Bs2-2q-9f7">
+                            <rect key="frame" x="0.0" y="0.0" width="213" height="278"/>
+                        </imageView>
+                        <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHj-Iw-v3E">
+                            <rect key="frame" x="28" y="223" width="157" height="55"/>
+                            <connections>
+                                <action selector="touchSureBtn:" destination="iN0-l3-epB" eventType="touchUpInside" id="pyy-my-Oox"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="IHj-Iw-v3E" firstAttribute="height" secondItem="Bs2-2q-9f7" secondAttribute="height" multiplier="64:326" id="2U8-iq-hhB"/>
+                        <constraint firstAttribute="trailing" secondItem="Bs2-2q-9f7" secondAttribute="trailing" id="93j-3M-PJf"/>
+                        <constraint firstItem="IHj-Iw-v3E" firstAttribute="width" secondItem="Bs2-2q-9f7" secondAttribute="width" multiplier="120:163" id="CZD-FL-kGa"/>
+                        <constraint firstItem="IHj-Iw-v3E" firstAttribute="centerX" secondItem="Bs2-2q-9f7" secondAttribute="centerX" id="DjL-Ig-8hb"/>
+                        <constraint firstAttribute="bottom" secondItem="IHj-Iw-v3E" secondAttribute="bottom" id="N4v-Up-uHA"/>
+                        <constraint firstAttribute="bottom" secondItem="Bs2-2q-9f7" secondAttribute="bottom" id="eWo-Xt-OkC"/>
+                        <constraint firstItem="Bs2-2q-9f7" firstAttribute="leading" secondItem="hPI-Kl-kHd" secondAttribute="leading" id="kca-sc-m2b"/>
+                        <constraint firstItem="Bs2-2q-9f7" firstAttribute="top" secondItem="hPI-Kl-kHd" secondAttribute="top" id="nC2-hK-WgF"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="hPI-Kl-kHd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Vc6-Jh-FZH"/>
+                <constraint firstItem="hPI-Kl-kHd" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="652:1334" id="guk-57-nue"/>
+                <constraint firstItem="hPI-Kl-kHd" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="hBZ-FG-1zY"/>
+                <constraint firstItem="hPI-Kl-kHd" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="500:750" id="l7U-VL-Y8v"/>
+            </constraints>
+            <connections>
+                <outlet property="showImageView" destination="Bs2-2q-9f7" id="ATn-NO-iNy"/>
+            </connections>
+            <point key="canvasLocation" x="-77" y="41"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_appoint_designer" width="500" height="653"/>
+    </resources>
+</document>

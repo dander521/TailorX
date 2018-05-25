@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Jb4-cO-AMP" customClass="TXDiscoverFilterView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ecO-74-hnq">
+                    <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lPZ-kd-gGt">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3eU-fp-tbn">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EtT-3p-rau">
+                    <rect key="frame" x="187.5" y="618" width="187.5" height="49"/>
+                    <color key="backgroundColor" red="1" green="0.13333333333333333" blue="0.3723083895388889" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="确定"/>
+                    <connections>
+                        <action selector="clickSureBtn:" destination="Jb4-cO-AMP" eventType="touchUpInside" id="pmE-0c-Zrx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OdY-e2-hly">
+                    <rect key="frame" x="0.0" y="618" width="187.5" height="49"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clcikResetBtn:" destination="Jb4-cO-AMP" eventType="touchUpInside" id="6Lh-eW-j06"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3eU-fp-tbn" firstAttribute="top" secondItem="ecO-74-hnq" secondAttribute="bottom" id="0JQ-C7-Te5"/>
+                <constraint firstItem="OdY-e2-hly" firstAttribute="top" secondItem="ecO-74-hnq" secondAttribute="bottom" id="0tc-IT-57i"/>
+                <constraint firstItem="OdY-e2-hly" firstAttribute="width" secondItem="Jb4-cO-AMP" secondAttribute="width" multiplier="1/2" id="6Hu-So-YH8"/>
+                <constraint firstAttribute="bottom" secondItem="ecO-74-hnq" secondAttribute="bottom" constant="49" id="7SK-1p-wN9"/>
+                <constraint firstItem="ecO-74-hnq" firstAttribute="top" secondItem="Jb4-cO-AMP" secondAttribute="top" constant="20" id="CPt-15-mAf"/>
+                <constraint firstAttribute="trailing" secondItem="EtT-3p-rau" secondAttribute="trailing" id="HLQ-WV-RcA"/>
+                <constraint firstItem="EtT-3p-rau" firstAttribute="top" secondItem="ecO-74-hnq" secondAttribute="bottom" id="IWR-lP-flT"/>
+                <constraint firstAttribute="bottom" secondItem="OdY-e2-hly" secondAttribute="bottom" id="NZz-pb-zmZ"/>
+                <constraint firstAttribute="trailing" secondItem="ecO-74-hnq" secondAttribute="trailing" id="Sgr-Vv-cLp"/>
+                <constraint firstItem="EtT-3p-rau" firstAttribute="leading" secondItem="OdY-e2-hly" secondAttribute="trailing" id="ZKe-tn-Gnx"/>
+                <constraint firstItem="ecO-74-hnq" firstAttribute="leading" secondItem="Jb4-cO-AMP" secondAttribute="leading" id="aPf-eZ-YB7"/>
+                <constraint firstAttribute="trailing" secondItem="3eU-fp-tbn" secondAttribute="trailing" id="cnd-KC-CC6"/>
+                <constraint firstAttribute="bottom" secondItem="EtT-3p-rau" secondAttribute="bottom" id="dPR-EA-9aU"/>
+                <constraint firstItem="EtT-3p-rau" firstAttribute="leading" secondItem="OdY-e2-hly" secondAttribute="trailing" id="tPM-cH-nn3"/>
+                <constraint firstItem="3eU-fp-tbn" firstAttribute="leading" secondItem="Jb4-cO-AMP" secondAttribute="leading" id="usJ-eC-aS1"/>
+                <constraint firstItem="OdY-e2-hly" firstAttribute="leading" secondItem="Jb4-cO-AMP" secondAttribute="leading" id="w53-jo-a78"/>
+                <constraint firstAttribute="bottom" secondItem="3eU-fp-tbn" secondAttribute="bottom" id="xvf-OK-zbh"/>
+            </constraints>
+            <connections>
+                <outlet property="collectionView" destination="ecO-74-hnq" id="Pg6-8D-PUC"/>
+                <outlet property="sureBtnBgView" destination="3eU-fp-tbn" id="7m4-Ex-0Yz"/>
+            </connections>
+            <point key="canvasLocation" x="-156.5" y="19.5"/>
+        </view>
+    </objects>
+</document>

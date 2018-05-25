@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB" customClass="TXKeyboardBar">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="109"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kVC-im-Hhp">
+                    <rect key="frame" x="206" y="0.0" width="1" height="109"/>
+                    <color key="backgroundColor" red="0.8666666666666667" green="0.8666666666666667" blue="0.8666666666666667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="DD1-mb-YGv"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WGF-hW-mk1">
+                    <rect key="frame" x="15" y="46" width="58" height="17"/>
+                    <attributedString key="attributedText">
+                        <fragment content="价格">
+                            <attributes>
+                                <color key="NSColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content="￥">
+                            <attributes>
+                                <color key="NSColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="0.00" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EoC-Kl-pE3">
+                    <rect key="frame" x="75" y="0.0" width="126" height="109"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHZ-jF-qnn">
+                    <rect key="frame" x="222" y="46" width="41" height="17"/>
+                    <attributedString key="attributedText">
+                        <fragment content="原价">
+                            <attributes>
+                                <color key="NSColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                        <fragment content=" ">
+                            <attributes>
+                                <font key="NSFont" size="17" name=".PingFangSC-Regular"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="￥0.000000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NNZ-nX-hn1">
+                    <rect key="frame" x="263" y="0.0" width="97" height="109"/>
+                    <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I4u-r4-pW3">
+                    <rect key="frame" x="266" y="53.5" width="90" height="1"/>
+                    <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="M6X-qe-VcS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NNZ-nX-hn1" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1Mi-Kr-fij"/>
+                <constraint firstItem="I4u-r4-pW3" firstAttribute="centerY" secondItem="NNZ-nX-hn1" secondAttribute="centerY" id="2iQ-lC-Asn"/>
+                <constraint firstAttribute="bottom" secondItem="NNZ-nX-hn1" secondAttribute="bottom" id="2x8-Fu-cCC"/>
+                <constraint firstItem="NNZ-nX-hn1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="4PN-el-kXL"/>
+                <constraint firstItem="I4u-r4-pW3" firstAttribute="leading" secondItem="NNZ-nX-hn1" secondAttribute="leading" constant="3" id="5Ge-N1-dd6"/>
+                <constraint firstAttribute="bottom" secondItem="kVC-im-Hhp" secondAttribute="bottom" id="9TY-lf-50w"/>
+                <constraint firstItem="WGF-hW-mk1" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="Aw6-Hi-9Xi"/>
+                <constraint firstItem="EoC-Kl-pE3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="D2g-Fc-vp2"/>
+                <constraint firstItem="kVC-im-Hhp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-0.5" id="LnL-pI-PSo"/>
+                <constraint firstItem="kVC-im-Hhp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="MHE-Kc-rOi"/>
+                <constraint firstItem="NNZ-nX-hn1" firstAttribute="leading" secondItem="mHZ-jF-qnn" secondAttribute="trailing" id="OrX-ec-a8E"/>
+                <constraint firstItem="WGF-hW-mk1" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="SLl-SJ-1PB"/>
+                <constraint firstItem="kVC-im-Hhp" firstAttribute="leading" secondItem="EoC-Kl-pE3" secondAttribute="trailing" constant="5" id="Tch-u9-wyA"/>
+                <constraint firstItem="I4u-r4-pW3" firstAttribute="trailing" secondItem="NNZ-nX-hn1" secondAttribute="trailing" constant="-4" id="eHm-at-sUL"/>
+                <constraint firstItem="mHZ-jF-qnn" firstAttribute="leading" secondItem="kVC-im-Hhp" secondAttribute="trailing" constant="15" id="m6E-g0-zUz"/>
+                <constraint firstAttribute="bottom" secondItem="EoC-Kl-pE3" secondAttribute="bottom" id="o3o-2H-0Wx"/>
+                <constraint firstItem="mHZ-jF-qnn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vJ1-3A-If2"/>
+                <constraint firstItem="EoC-Kl-pE3" firstAttribute="leading" secondItem="WGF-hW-mk1" secondAttribute="trailing" constant="2" id="y4M-oL-lgS"/>
+                <constraint firstItem="EoC-Kl-pE3" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="z9D-Fz-e3M"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftTextField" destination="EoC-Kl-pE3" id="PDT-1u-Fo9"/>
+                <outlet property="midLine" destination="kVC-im-Hhp" id="1dT-1z-nxV"/>
+                <outlet property="rightLabel" destination="mHZ-jF-qnn" id="kcV-We-MCJ"/>
+                <outlet property="rightMiddleView" destination="I4u-r4-pW3" id="reC-Sj-VT6"/>
+                <outlet property="rightTextField" destination="NNZ-nX-hn1" id="KXI-hx-bly"/>
+            </connections>
+            <point key="canvasLocation" x="-741" y="-229.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="y56-S6-Rvp" customClass="TXRulesView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="446"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qh-Qt-lJq">
+                    <rect key="frame" x="0.0" y="402" width="375" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="xZU-ep-daF"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gcW-y1-QT1">
+                    <rect key="frame" x="0.0" y="401.5" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="AD2-S8-IaU"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1、为提高预约效率，需支付0.020000元定金\n2、若取消预约或订单失效，预约定金全额退还\n3、请务必按时到店，享受您的专属服务\n4、如遇不可抗力影响，及时与门店联系" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaG-PW-xKy">
+                    <rect key="frame" x="30" y="55" width="315" height="334.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="预约提醒" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDZ-fa-ZhO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="qZd-z6-ymV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="BaG-PW-xKy" secondAttribute="trailing" constant="30" id="0Tx-PB-ovR"/>
+                <constraint firstItem="aDZ-fa-ZhO" firstAttribute="leading" secondItem="y56-S6-Rvp" secondAttribute="leading" id="CJX-Aj-Ngy"/>
+                <constraint firstAttribute="trailing" secondItem="aDZ-fa-ZhO" secondAttribute="trailing" id="Eyj-eI-ao8"/>
+                <constraint firstItem="aDZ-fa-ZhO" firstAttribute="top" secondItem="y56-S6-Rvp" secondAttribute="top" id="Hf6-xJ-Reg"/>
+                <constraint firstItem="gcW-y1-QT1" firstAttribute="top" secondItem="BaG-PW-xKy" secondAttribute="bottom" constant="12" id="PRg-ae-3KL"/>
+                <constraint firstAttribute="bottom" secondItem="6qh-Qt-lJq" secondAttribute="bottom" id="VUn-er-Y3W"/>
+                <constraint firstAttribute="trailing" secondItem="gcW-y1-QT1" secondAttribute="trailing" id="XRx-r4-v9F"/>
+                <constraint firstItem="BaG-PW-xKy" firstAttribute="top" secondItem="aDZ-fa-ZhO" secondAttribute="bottom" id="bAT-9u-TH8"/>
+                <constraint firstItem="gcW-y1-QT1" firstAttribute="leading" secondItem="y56-S6-Rvp" secondAttribute="leading" id="cow-h5-2mF"/>
+                <constraint firstItem="6qh-Qt-lJq" firstAttribute="top" secondItem="gcW-y1-QT1" secondAttribute="bottom" id="fhP-2C-bTc"/>
+                <constraint firstAttribute="trailing" secondItem="6qh-Qt-lJq" secondAttribute="trailing" id="mg1-Is-Hfr"/>
+                <constraint firstItem="6qh-Qt-lJq" firstAttribute="leading" secondItem="y56-S6-Rvp" secondAttribute="leading" id="wu2-wd-rvZ"/>
+                <constraint firstItem="BaG-PW-xKy" firstAttribute="leading" secondItem="y56-S6-Rvp" secondAttribute="leading" constant="30" id="yWh-OL-NHC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="sureBtn" destination="6qh-Qt-lJq" id="iZF-YM-Sym"/>
+                <outlet property="textLabel" destination="BaG-PW-xKy" id="Ilw-Re-Sud"/>
+            </connections>
+            <point key="canvasLocation" x="-75.5" y="-66"/>
+        </view>
+    </objects>
+</document>

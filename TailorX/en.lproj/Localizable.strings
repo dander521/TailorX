@@ -1,0 +1,138 @@
+/*
+ Localizable.strings
+ TailorX
+ 
+ Created by 倩倩 on 17/3/14.
+ Copyright © 2017年 utouu. All rights reserved.
+ */
+
+//**************************************Title*****************************************//
+
+"Title_Home" = "首页";
+"Title_Information" = "资讯";
+"Title_Trend" = "资讯";
+"Title_Classify" = "分类";
+"Title_QueueNo" = "排号";
+"Title_Store" = "定制";
+
+//***********************************Home**************************************//
+
+//***********************************Classify**************************************//
+
+//***********************************QueueNo**************************************//
+
+//***********************************Store**************************************//
+
+//***********************************UserCenter**************************************//
+
+"Str_Book" = "预约";
+"Str_Order_Manager" = "订单管理";
+"Str_QueueNo_Manager" = "排号管理";
+"Str_Personal_Wallet" = "个人钱包";
+"Str_Notification" = "通知";
+"Str_Favorite" = "收藏";
+"Str_Personal_Info" = "个人信息";
+"Str_Setting" = "设置";
+
+"Str_Avatar" = "头像";
+"Str_Nickname" = "昵称";
+"Str_Sex" = "性别";
+"Str_Bodydata" = "量体数据";
+"Str_Address" = "地址";
+"Str_AccountSecurity" = "账号安全";
+"Str_ThirdBind" = "第三方绑定";
+"Str_Logout" = "退出账号";
+
+"Str_Camera" = "拍照";
+"Str_Album" = "相册";
+"Str_OK" = "确定";
+"Str_Sure" = "确认";
+"Str_Cancel" = "取消";
+
+"Str_Female" = "女";
+"Str_Male" = "男";
+
+"Str_SetNickname" = "设置昵称";
+"Str_Save" = "保存";
+"Str_Set" = "已设置";
+"Str_AddressManager" = "地址管理";
+"Str_AddAddress" = "新增地址";
+"Str_EditAddress" = "编辑地址";
+
+"Str_Consignee" = "收货人姓名";
+"Str_Telephone" = "联系电话";
+"Str_AreaCode" = "邮编（选填）";
+"Str_Area" = "省/市/县（区）";
+"Str_DetailAdd" = "详细信息";
+"Str_DefaultAdd" = "设置成默认新增地址";
+
+"Str_PhoneNo" = "手机号";
+"Str_NameVerify" = "实名认证";
+"Str_ModifySecret" = "修改密码";
+
+"Str_AlipayBind" = "支付宝绑定";
+"Str_WeChat" = "微信";
+"Str_QQ" = "腾讯QQ";
+"Str_ThirdAccountBind" = "第三方账号绑定";
+
+"Str_AliAccount" = "支付宝帐号";
+
+"Str_PhoneNeedBind" = "手机号未绑定";
+"Str_PhoneBinded" = "手机号已绑定";
+"Str_PhoneBind" = "绑定手机号";
+"Str_BindPhone" = "绑定手机号";
+"Str_BindTime" = "绑定时间";
+
+"Str_OldSecret" = "旧密码：";
+"Str_NewSecret" = "新密码：";
+"Str_ConfirmSecret" = "确认新密码：";
+
+"Str_RealName" = "真实姓名";
+"Str_IDType" = "证件类型";
+"Str_IDCode" = "证件号码";
+"Str_IDValidityTime" = "身份证有效期";
+"Str_IDUpside" = "证件照正面";
+"Str_IDDownside" = "证件照背面";
+
+"Str_MyOrder" = "我的订单";
+"Str_ReadyForPay" = "待付款";
+"Str_InQueue" = "排队中";
+"Str_InProduct" = "生产中";
+"Str_ReadyForReceive" = "待收货";
+"Str_ReadyForComment" = "待评价";
+
+"Str_OrderDetail" = "订单详情";
+"Str_CheckLogistics" = "查看物流";
+"Str_Done" = "完成";
+"Str_GoComment" = "去评价";
+"Str_Order" = "订单";
+"Str_Submit" = "提交";
+
+"Str_TestCloth" = "验布";
+"Str_Tail" = "剪裁";
+"Str_Tailor" = "缝制";
+"Str_Ironing" = "整烫";
+"Str_Checkout" = "检验";
+"Str_Packing" = "包装";
+
+"Str_Pay" = "支付";
+
+"Prompt_SetNickname" = "最多15个字符，支持中英文、数字、下划线，24小时内只能修改一次！";
+"Prompt_InputAliAccount" = "请输入支付宝帐号";
+"Prompt_InputReminder" = "提示：支付宝账户必须是Email或手机号";
+"Prompt_InputOldSecret" = "请输入旧密码";
+"Prompt_InputNewSecret" = "请输入6-18位新密码";
+"Prompt_InputNewSecretAgain" = "请再次确认新密码";
+"Prompt_Input_RealName" = "请填写您的真实姓名";
+"Prompt_InputIDNum" = "请填写您的身份证号";
+"Prompt_InputIDAddress" = "请输入身份证住址";
+"Prompt_InQueueChangeFirst" = "若要更换排号顺序";
+"Prompt_InQueueChangeSecond" = "请至排号管理作相关操作";
+"Prompt_ActivityOver" = "订单已失效";
+"Prompt_AutoClose" = "后自动关闭";
+"Prompt_ProfitByTradeQueueNo" = "提示：通过排号交易，可获得收益";
+"Prompt_Order_BuyQueueNo" = "通过购买排号，宝贝可加速生产！";
+"Prompt_InQueueChangeFirst" = "若要更换排号顺序";
+"Prompt_InQueueChangeSecond" = "请至排号管理作相关操作";
+
+"Prompt_Input_Comment" = "请输入您的评论内容";

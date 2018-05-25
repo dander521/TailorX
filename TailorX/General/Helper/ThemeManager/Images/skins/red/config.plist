@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>navigation_color</key>
+	<dict>
+		<key>B</key>
+		<integer>94</integer>
+		<key>G</key>
+		<integer>47</integer>
+		<key>R</key>
+		<integer>246</integer>
+	</dict>
+	<key>tabBar_color</key>
+	<dict>
+		<key>B</key>
+		<integer>94</integer>
+		<key>G</key>
+		<integer>47</integer>
+		<key>R</key>
+		<integer>246</integer>
+	</dict>
+	<key>theme_color</key>
+	<dict>
+		<key>B</key>
+		<integer>102</integer>
+		<key>G</key>
+		<integer>51</integer>
+		<key>R</key>
+		<integer>255</integer>
+	</dict>
+	<key>theme_Btn_title_color</key>
+	<dict>
+		<key>B</key>
+		<integer>255</integer>
+		<key>G</key>
+		<integer>255</integer>
+		<key>R</key>
+		<integer>255</integer>
+	</dict>
+	<key>theme_Btn_bg_color</key>
+	<dict>
+		<key>B</key>
+		<integer>94</integer>
+		<key>G</key>
+		<integer>47</integer>
+		<key>R</key>
+		<integer>246</integer>
+	</dict>
+	<key>clear_color</key>
+	<dict>
+		<key>B</key>
+		<integer>255</integer>
+		<key>G</key>
+		<integer>255</integer>
+		<key>R</key>
+		<integer>255</integer>
+		<key>A</key>
+		<integer>0</integer>
+	</dict>
+</dict>
+</plist>

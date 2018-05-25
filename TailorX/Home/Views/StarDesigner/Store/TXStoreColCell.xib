@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TXStoreColCell" id="gTV-IL-0wX" customClass="TXStoreColCell">
+            <rect key="frame" x="0.0" y="0.0" width="301" height="203"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="301" height="203"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O8k-ZA-l9P">
+                        <rect key="frame" x="0.0" y="0.0" width="301" height="169"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="节能大厦" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-Os-lrb">
+                        <rect key="frame" x="0.0" y="169" width="301" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="exj-U5-Plf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="O8k-ZA-l9P" secondAttribute="trailing" id="OLz-dr-FUz"/>
+                <constraint firstAttribute="trailing" secondItem="EC2-Os-lrb" secondAttribute="trailing" id="Y7J-BT-jxT"/>
+                <constraint firstAttribute="bottom" secondItem="O8k-ZA-l9P" secondAttribute="bottom" constant="34" id="jGm-3v-kqM"/>
+                <constraint firstItem="EC2-Os-lrb" firstAttribute="top" secondItem="O8k-ZA-l9P" secondAttribute="bottom" id="qso-oR-4Z2"/>
+                <constraint firstItem="O8k-ZA-l9P" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rYq-aw-P29"/>
+                <constraint firstItem="EC2-Os-lrb" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="tcU-Mt-ROn"/>
+                <constraint firstItem="O8k-ZA-l9P" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="zvS-bK-Ome"/>
+            </constraints>
+            <size key="customSize" width="301" height="203"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="coverImageView" destination="O8k-ZA-l9P" id="cHo-qs-GIB"/>
+                <outlet property="nameLabel" destination="EC2-Os-lrb" id="tPf-NO-5xH"/>
+            </connections>
+            <point key="canvasLocation" x="-4.5" y="130.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

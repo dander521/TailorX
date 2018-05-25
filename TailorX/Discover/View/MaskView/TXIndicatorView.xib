@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="YZr-VV-yiB" customClass="TXIndicatorView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="jZe-z6-a3Q">
+                    <rect key="frame" x="182.5" y="0.0" width="10" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="6jI-dM-r0S"/>
+                        <constraint firstAttribute="width" constant="10" id="aHk-K0-f9y"/>
+                    </constraints>
+                </view>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="QSs-Bc-2Wy">
+                    <rect key="frame" x="178" y="302" width="20" height="20"/>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlc-cd-l51">
+                    <rect key="frame" x="0.0" y="0.0" width="100" height="64"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="c15-OL-JzA"/>
+                        <constraint firstAttribute="width" constant="100" id="y34-BP-60I"/>
+                    </constraints>
+                </button>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="iCV-QN-ewX">
+                    <rect key="frame" x="177.5" y="50" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QSs-Bc-2Wy" firstAttribute="top" secondItem="YZr-VV-yiB" secondAttribute="top" constant="302" id="54a-XY-Dg2"/>
+                <constraint firstItem="QSs-Bc-2Wy" firstAttribute="centerX" secondItem="YZr-VV-yiB" secondAttribute="centerX" id="89I-yo-4fp"/>
+                <constraint firstItem="iCV-QN-ewX" firstAttribute="centerY" secondItem="jZe-z6-a3Q" secondAttribute="centerY" constant="28" id="P9c-G8-MLA"/>
+                <constraint firstItem="jZe-z6-a3Q" firstAttribute="top" secondItem="YZr-VV-yiB" secondAttribute="top" id="Yoq-WV-gXN"/>
+                <constraint firstItem="mlc-cd-l51" firstAttribute="leading" secondItem="YZr-VV-yiB" secondAttribute="leading" id="f3G-5J-QcG"/>
+                <constraint firstItem="mlc-cd-l51" firstAttribute="top" secondItem="YZr-VV-yiB" secondAttribute="top" id="neQ-sc-BW2"/>
+                <constraint firstItem="jZe-z6-a3Q" firstAttribute="centerX" secondItem="YZr-VV-yiB" secondAttribute="centerX" id="w2G-Yl-FWQ"/>
+                <constraint firstItem="iCV-QN-ewX" firstAttribute="centerX" secondItem="YZr-VV-yiB" secondAttribute="centerX" id="yoh-LQ-Yy1"/>
+            </constraints>
+            <connections>
+                <outlet property="activityView" destination="QSs-Bc-2Wy" id="V2R-Ts-Sly"/>
+                <outlet property="backBtn" destination="mlc-cd-l51" id="bVy-9M-ZsE"/>
+                <outlet property="topActivityView" destination="iCV-QN-ewX" id="flp-kG-sFu"/>
+                <outlet property="topLayout" destination="54a-XY-Dg2" id="HHg-i5-ukM"/>
+            </connections>
+            <point key="canvasLocation" x="16.5" y="-57.5"/>
+        </view>
+    </objects>
+</document>

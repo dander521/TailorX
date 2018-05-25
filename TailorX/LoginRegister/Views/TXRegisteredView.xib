@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="3w8-Sc-AIS" customClass="TXRegisteredView">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您已是UTOUU用户无需注册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HYh-OH-CXh">
+                    <rect key="frame" x="33.5" y="25.5" width="203.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OWR-Rh-Lor">
+                    <rect key="frame" x="67" y="58" width="137.5" height="15"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="后跳转到登录页面" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Wx-vH-ZoC">
+                            <rect key="frame" x="23" y="-0.5" width="114.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3秒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmF-zj-1cn">
+                            <rect key="frame" x="0.0" y="-0.5" width="23" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="0.23313781459999999" blue="0.46344736139999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="4Vu-Xo-oM8"/>
+                        <constraint firstItem="3Wx-vH-ZoC" firstAttribute="centerY" secondItem="OWR-Rh-Lor" secondAttribute="centerY" id="Vym-DE-jUP"/>
+                        <constraint firstItem="3Wx-vH-ZoC" firstAttribute="leading" secondItem="CmF-zj-1cn" secondAttribute="trailing" id="Wst-vb-VMc"/>
+                        <constraint firstItem="CmF-zj-1cn" firstAttribute="leading" secondItem="OWR-Rh-Lor" secondAttribute="leading" id="Zfh-Dk-3uX"/>
+                        <constraint firstItem="CmF-zj-1cn" firstAttribute="centerY" secondItem="OWR-Rh-Lor" secondAttribute="centerY" id="aDr-th-Xvp"/>
+                        <constraint firstAttribute="trailing" secondItem="3Wx-vH-ZoC" secondAttribute="trailing" id="i6m-yE-y3Z"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4b-ci-bfc">
+                    <rect key="frame" x="0.0" y="96" width="270" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2Oz-sX-xdj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="立即跳转">
+                        <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOo-95-K5D">
+                    <rect key="frame" x="0.0" y="95.5" width="270" height="0.5"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="2o8-Rc-xaj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96470588235294119" green="0.96470588235294119" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="yOo-95-K5D" secondAttribute="trailing" id="4ZT-RW-D1C"/>
+                <constraint firstAttribute="trailing" secondItem="I4b-ci-bfc" secondAttribute="trailing" id="Bsk-Cy-BTe"/>
+                <constraint firstItem="I4b-ci-bfc" firstAttribute="leading" secondItem="3w8-Sc-AIS" secondAttribute="leading" id="MPu-Gp-002"/>
+                <constraint firstItem="OWR-Rh-Lor" firstAttribute="top" secondItem="HYh-OH-CXh" secondAttribute="bottom" constant="13" id="Zhh-W8-yDW"/>
+                <constraint firstItem="OWR-Rh-Lor" firstAttribute="centerX" secondItem="3w8-Sc-AIS" secondAttribute="centerX" id="bWK-VQ-Yc1"/>
+                <constraint firstItem="HYh-OH-CXh" firstAttribute="centerX" secondItem="3w8-Sc-AIS" secondAttribute="centerX" id="huv-IH-TPl"/>
+                <constraint firstItem="I4b-ci-bfc" firstAttribute="top" secondItem="yOo-95-K5D" secondAttribute="bottom" id="oW9-wa-Eie"/>
+                <constraint firstItem="HYh-OH-CXh" firstAttribute="top" secondItem="3w8-Sc-AIS" secondAttribute="top" constant="25.5" id="pwf-4A-kd4"/>
+                <constraint firstItem="yOo-95-K5D" firstAttribute="leading" secondItem="3w8-Sc-AIS" secondAttribute="leading" id="q2n-P3-Mwh"/>
+                <constraint firstAttribute="bottom" secondItem="I4b-ci-bfc" secondAttribute="bottom" id="y3l-yk-gcp"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <real key="value" value="7.5"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="returnBtn" destination="I4b-ci-bfc" id="q2V-7B-D9o"/>
+                <outlet property="timeLabel" destination="CmF-zj-1cn" id="zdE-Ws-FB0"/>
+            </connections>
+            <point key="canvasLocation" x="-177" y="-546"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TXRegisterController">
+            <connections>
+                <outlet property="navTopLayout" destination="qcP-gi-b86" id="Yiy-KY-0dG"/>
+                <outlet property="tableView" destination="8U7-10-Wpb" id="prt-Nz-i6k"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8U7-10-Wpb">
+                    <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="3M5-sb-ZdW"/>
+                        <outlet property="delegate" destination="-1" id="nfg-2m-Lla"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gvv-76-xf1" userLabel="navView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_nav_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="auA-E7-H2P">
+                            <rect key="frame" x="15" y="31.5" width="12" height="21"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnv-qt-nUS">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="64"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="bKq-rT-bkc"/>
+                            </constraints>
+                            <connections>
+                                <action selector="back:" destination="-1" eventType="touchUpInside" id="Ix1-8p-P01"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="注 册" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSU-9e-lCM">
+                            <rect key="frame" x="168.5" y="31.5" width="39" height="21"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" red="0.18039215689999999" green="0.18039215689999999" blue="0.18039215689999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="bnv-qt-nUS" firstAttribute="top" secondItem="Gvv-76-xf1" secondAttribute="top" id="B52-1l-HBA"/>
+                        <constraint firstItem="auA-E7-H2P" firstAttribute="centerY" secondItem="Gvv-76-xf1" secondAttribute="centerY" constant="10" id="DCv-DO-XKn"/>
+                        <constraint firstAttribute="height" constant="64" id="IhV-B1-DA3"/>
+                        <constraint firstItem="auA-E7-H2P" firstAttribute="leading" secondItem="Gvv-76-xf1" secondAttribute="leading" constant="15" id="LJG-zN-5Z2"/>
+                        <constraint firstAttribute="bottom" secondItem="bnv-qt-nUS" secondAttribute="bottom" id="Mk1-05-yUq"/>
+                        <constraint firstItem="GSU-9e-lCM" firstAttribute="centerX" secondItem="Gvv-76-xf1" secondAttribute="centerX" id="V3L-mv-Fof"/>
+                        <constraint firstItem="bnv-qt-nUS" firstAttribute="leading" secondItem="Gvv-76-xf1" secondAttribute="leading" id="cXA-9k-w9n"/>
+                        <constraint firstItem="GSU-9e-lCM" firstAttribute="centerY" secondItem="auA-E7-H2P" secondAttribute="centerY" id="wbf-ku-VnM"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8U7-10-Wpb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BMg-TW-PWF"/>
+                <constraint firstItem="Gvv-76-xf1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JLW-V8-vg8"/>
+                <constraint firstAttribute="trailing" secondItem="Gvv-76-xf1" secondAttribute="trailing" id="gGQ-YZ-DUL"/>
+                <constraint firstItem="8U7-10-Wpb" firstAttribute="top" secondItem="bww-Ue-wmx" secondAttribute="top" constant="44" id="gKc-1H-KJE"/>
+                <constraint firstItem="Gvv-76-xf1" firstAttribute="top" secondItem="bww-Ue-wmx" secondAttribute="top" constant="-20" id="qcP-gi-b86"/>
+                <constraint firstAttribute="trailing" secondItem="8U7-10-Wpb" secondAttribute="trailing" id="xbM-M4-9Ae"/>
+                <constraint firstAttribute="bottom" secondItem="8U7-10-Wpb" secondAttribute="bottom" id="z7O-F4-jqe"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="bww-Ue-wmx"/>
+            <point key="canvasLocation" x="-7.5" y="-107.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_nav_arrow" width="12" height="21"/>
+    </resources>
+</document>

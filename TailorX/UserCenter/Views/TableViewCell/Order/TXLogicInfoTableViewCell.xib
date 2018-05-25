@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TXLogicInfoTableViewCell" rowHeight="90" id="KGk-i7-Jjw" customClass="TXLogicInfoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_mian_logistics_car" translatesAutoresizingMaskIntoConstraints="NO" id="KuI-Yk-kII">
+                        <rect key="frame" x="16" y="17" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Iqa-Cq-Dzg"/>
+                            <constraint firstAttribute="width" constant="14" id="ihS-NM-jfa"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="承运来源：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xcC-z2-aZs">
+                        <rect key="frame" x="38" y="14" width="87" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="87" id="1Ij-Gr-2Eu"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQr-Az-Zhg">
+                        <rect key="frame" x="117" y="14" width="295" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_main_waybill" translatesAutoresizingMaskIntoConstraints="NO" id="dki-o4-b1a">
+                        <rect key="frame" x="17" y="46" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="Q1H-vO-wal"/>
+                            <constraint firstAttribute="width" constant="14" id="ijk-bH-QzU"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="运单编号：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gyz-rc-FJG">
+                        <rect key="frame" x="38" y="43" width="77" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dJ-rH-PH2">
+                        <rect key="frame" x="117" y="43" width="295" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xcC-z2-aZs" firstAttribute="firstBaseline" secondItem="TQr-Az-Zhg" secondAttribute="firstBaseline" id="5qb-ym-9jG"/>
+                    <constraint firstItem="xcC-z2-aZs" firstAttribute="leading" secondItem="gyz-rc-FJG" secondAttribute="leading" id="7Nc-bM-Eor"/>
+                    <constraint firstItem="xcC-z2-aZs" firstAttribute="baseline" secondItem="TQr-Az-Zhg" secondAttribute="baseline" id="BtG-Bf-ehB"/>
+                    <constraint firstItem="TQr-Az-Zhg" firstAttribute="leading" secondItem="7dJ-rH-PH2" secondAttribute="leading" id="CrP-EH-TsC"/>
+                    <constraint firstItem="dki-o4-b1a" firstAttribute="top" secondItem="KuI-Yk-kII" secondAttribute="bottom" constant="15" id="H0w-Jf-1IG"/>
+                    <constraint firstItem="KuI-Yk-kII" firstAttribute="centerY" secondItem="xcC-z2-aZs" secondAttribute="centerY" id="HyV-eO-Kmr"/>
+                    <constraint firstItem="TQr-Az-Zhg" firstAttribute="trailing" secondItem="7dJ-rH-PH2" secondAttribute="trailing" id="IJu-w1-VTN"/>
+                    <constraint firstItem="dki-o4-b1a" firstAttribute="centerY" secondItem="gyz-rc-FJG" secondAttribute="centerY" id="Kf0-eN-Rxz"/>
+                    <constraint firstItem="KuI-Yk-kII" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="9" id="SDb-rC-2DO"/>
+                    <constraint firstItem="gyz-rc-FJG" firstAttribute="top" secondItem="xcC-z2-aZs" secondAttribute="bottom" constant="8" symbolic="YES" id="TWu-6v-1JR"/>
+                    <constraint firstItem="TQr-Az-Zhg" firstAttribute="leading" secondItem="KuI-Yk-kII" secondAttribute="trailing" constant="87" id="Zwg-KG-OOP"/>
+                    <constraint firstItem="xcC-z2-aZs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="eAb-LS-QgT"/>
+                    <constraint firstItem="KuI-Yk-kII" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="fAW-kl-SAw"/>
+                    <constraint firstItem="KuI-Yk-kII" firstAttribute="leading" secondItem="dki-o4-b1a" secondAttribute="leading" constant="-1" id="nKI-Fq-zta"/>
+                    <constraint firstItem="xcC-z2-aZs" firstAttribute="leading" secondItem="KuI-Yk-kII" secondAttribute="trailing" constant="8" symbolic="YES" id="ozF-y4-Usl"/>
+                    <constraint firstItem="TQr-Az-Zhg" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="pDm-50-wUb"/>
+                    <constraint firstItem="gyz-rc-FJG" firstAttribute="baseline" secondItem="7dJ-rH-PH2" secondAttribute="baseline" id="ue3-d8-dud"/>
+                    <constraint firstItem="gyz-rc-FJG" firstAttribute="firstBaseline" secondItem="7dJ-rH-PH2" secondAttribute="firstBaseline" id="vgd-ip-G1R"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logicCompanyLabel" destination="TQr-Az-Zhg" id="z1p-ss-bGx"/>
+                <outlet property="logicTransNoLabel" destination="7dJ-rH-PH2" id="Hoz-mp-BN0"/>
+            </connections>
+            <point key="canvasLocation" x="-75" y="145"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_main_waybill" width="14" height="14"/>
+        <image name="ic_mian_logistics_car" width="14" height="14"/>
+    </resources>
+</document>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="177" id="KGk-i7-Jjw" customClass="TXCommentDisplayTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="176"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="175.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="宝贝收到了！非常满意比想象的好多了！这样的价钱买这么好的衣服太值了真没想到这么好质量，看好的亲快下手吧。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E1A-qD-shC">
+                        <rect key="frame" x="16" y="16" width="288" height="68.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.1803921568627451" green="0.1803921568627451" blue="0.1803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5tQ-LJ-Jnr">
+                        <rect key="frame" x="16" y="99.5" width="60" height="60"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4Kf-Rz-54L"/>
+                            <constraint firstAttribute="height" constant="60" id="zAS-gx-qIP"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="biN-IV-IxE" appends="YES" id="x6s-2v-k7z"/>
+                        </connections>
+                    </imageView>
+                    <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W8W-gE-FMI">
+                        <rect key="frame" x="96" y="99.5" width="60" height="60"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="F3W-LW-vA7"/>
+                            <constraint firstAttribute="width" constant="60" id="baX-Sz-vBc"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="Uvo-4n-1xE" appends="YES" id="yxS-YB-wb4"/>
+                        </connections>
+                    </imageView>
+                    <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="il3-kL-A9J">
+                        <rect key="frame" x="176" y="99.5" width="60" height="60"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="daH-2N-cGO"/>
+                            <constraint firstAttribute="height" constant="60" id="w0v-Z9-4g5"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="VXv-cH-Upz" appends="YES" id="W4l-6y-gKz"/>
+                        </connections>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="E1A-qD-shC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="099-uj-fxw"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="W8W-gE-FMI" secondAttribute="bottom" constant="8" id="BmB-Ix-QZ0"/>
+                    <constraint firstAttribute="trailing" secondItem="E1A-qD-shC" secondAttribute="trailing" constant="16" id="Ldp-HT-Ict"/>
+                    <constraint firstItem="5tQ-LJ-Jnr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="Qjp-zm-HiP"/>
+                    <constraint firstItem="E1A-qD-shC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="WJW-BH-Cb6"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="E1A-qD-shC" secondAttribute="bottom" priority="750" constant="8" id="ehU-VE-Cm9"/>
+                    <constraint firstItem="W8W-gE-FMI" firstAttribute="leading" secondItem="5tQ-LJ-Jnr" secondAttribute="trailing" constant="20" id="j0r-iJ-KMs"/>
+                    <constraint firstItem="5tQ-LJ-Jnr" firstAttribute="top" secondItem="E1A-qD-shC" secondAttribute="bottom" constant="15" id="mCN-hq-50x"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="5tQ-LJ-Jnr" secondAttribute="bottom" constant="8" id="qfq-FF-f8j"/>
+                    <constraint firstItem="il3-kL-A9J" firstAttribute="leading" secondItem="W8W-gE-FMI" secondAttribute="trailing" constant="20" id="s2w-6B-WCg"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="il3-kL-A9J" secondAttribute="bottom" constant="8" id="x77-Kl-vyh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="desLabel" destination="E1A-qD-shC" id="7ub-S7-X4G"/>
+                <outlet property="firstImageView" destination="5tQ-LJ-Jnr" id="7zt-td-mKX"/>
+                <outlet property="secondImageView" destination="W8W-gE-FMI" id="NVb-fk-g9s"/>
+                <outlet property="thirdImageView" destination="il3-kL-A9J" id="sAN-4s-1i5"/>
+            </connections>
+            <point key="canvasLocation" x="51" y="84"/>
+        </tableViewCell>
+        <tapGestureRecognizer id="biN-IV-IxE">
+            <connections>
+                <action selector="tapGestureRecognize:" destination="KGk-i7-Jjw" id="QC3-QE-6pe"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Uvo-4n-1xE">
+            <connections>
+                <action selector="tapGestureRecognize:" destination="KGk-i7-Jjw" id="G60-4i-JiG"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="VXv-cH-Upz">
+            <connections>
+                <action selector="tapGestureRecognize:" destination="KGk-i7-Jjw" id="04k-CV-jUs"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

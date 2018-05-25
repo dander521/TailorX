@@ -1,0 +1,94 @@
+//
+//  TailorX.pch
+//  TailorX
+//
+//  Created by Roger on 17/3/14.
+//  Copyright © 2017年 utouu. All rights reserved.
+//
+
+#ifndef TailorX_pch
+#define TailorX_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+
+#define NSEaseLocalizedString(key, comment) [[NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:@"EaseUIResource" withExtension:@"bundle"]] localizedStringForKey:(key) value:@"" table:nil]
+#import <HelpDeskLite/HelpDeskLite.h>
+#import "HelpDeskUI.h"
+#endif
+
+#import "Definition.h"
+#import "TXCustomTools.h"
+#import "TXNotificationMacro.h"
+#import "UIImageView+EMWebCache.h"
+#import "TXDiscoverItem.h"
+#import "ZOZolaZoomTransition.h"
+#import "TXPanGestureRecognizer.h"
+#import "UIView+SFrame.h"
+
+#import "Masonry.h"
+#import "MBProgressHUD+CMKit.h"
+#import "AFNetworking.h"
+#import "MJExtension.h"
+#import "MJDIYHeader.h"
+#import "MJDIYAutoFooter.h"
+#import "DACircularProgressView.h"
+#import "TXNetworkTool.h"
+
+#import "ThemeImageView.h"
+#import "CMImagePickerManager.h"
+#import "NSString+Extension.h"
+
+#import "TXBaseViewController.h"
+#import "ThemeManager.h"
+#import "ThemeButton.h"
+#import "ThemeImageView.h"
+#import "ThemeLabel.h"
+#import "TailorxFactory.h"
+#import "TXSeperateLineCell.h"
+#import "TXKVPO.h"
+#import "TXInformationClassModel.h"
+
+#import "TXInterfaceURLs.h"
+#import "TXServiceUtil.h"
+#import "PassportResult.h"
+#import "TXCommon.h"
+#import "TXNetRequest.h"
+#import "TXMyMD5.h"
+#import "PassportRequest.h"
+#import "ShowMessage.h"
+#import "NetErrorView.h"
+#import "TXRequestUtil.h"
+#import "TXNetworkTool.h"
+#import "TXBaseNetworkRequset.h"
+#import <QBImagePickerController/QBImagePickerController.h>
+#import "UILabel+YBAttributeTextTapAction.h"
+
+// 第三方登录
+#import <UMShare/UMShare.h>
+
+#import "UtouuOauth.h"
+#import "TXKfLoginManager.h"
+
+#import <AlipaySDK/AlipaySDK.h>
+
+#import <AMapFoundationKit/AMapFoundationKit.h>
+#import <MAMapKit/MAMapKit.h>
+#import <AMapSearchKit/AMapSearchKit.h>
+
+#import "IQKeyboardManager.h"
+
+// Caregory
+#import "WYKit.h"
+#import "UIView+Position.h"
+#import "UIAlertController+SQExtension.m"
+#import "UILabel+YMCircularLabel.h"
+#import "UIImage+YMImg.h"
+#import "NSString+WGDate.h"
+
+#import "TXUserModel.h"
+#import "TXModelAchivar.h"
+
+
+
+#endif /* TailorX_pch */

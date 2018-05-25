@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="TXTextViewTableViewCell" rowHeight="128" id="KGk-i7-Jjw" customClass="TXTextViewTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="127.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="z66-Gn-V5Z">
+                        <rect key="frame" x="10" y="8" width="302" height="80"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="HKS-tL-Q9f"/>
+                        </constraints>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="XcP-FA-6mz"/>
+                        </connections>
+                    </textView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9xJ-N5-ZEv">
+                        <rect key="frame" x="16" y="90" width="304" height="1"/>
+                        <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="8oG-8N-ZjY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PLM-wI-lb8">
+                        <rect key="frame" x="0.0" y="91" width="40" height="35"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="2Rx-I0-Bck"/>
+                            <constraint firstAttribute="height" constant="35" id="o0r-cu-vIM"/>
+                        </constraints>
+                        <inset key="imageEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" image="ic_mian_default_address"/>
+                        <connections>
+                            <action selector="touchDefaultButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FLJ-Q1-Q62"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="设置成默认新增地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdS-RD-0F9">
+                        <rect key="frame" x="43" y="100.5" width="129" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PLM-wI-lb8" firstAttribute="top" secondItem="9xJ-N5-ZEv" secondAttribute="bottom" id="83Q-Gd-fac"/>
+                    <constraint firstItem="pdS-RD-0F9" firstAttribute="centerY" secondItem="PLM-wI-lb8" secondAttribute="centerY" id="9WX-j0-NAY"/>
+                    <constraint firstItem="z66-Gn-V5Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="Dz3-k1-xiC"/>
+                    <constraint firstItem="PLM-wI-lb8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JMU-Ch-58i"/>
+                    <constraint firstItem="z66-Gn-V5Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="Nga-sV-Hqs"/>
+                    <constraint firstItem="9xJ-N5-ZEv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="c8t-hK-qkv"/>
+                    <constraint firstItem="9xJ-N5-ZEv" firstAttribute="top" secondItem="z66-Gn-V5Z" secondAttribute="bottom" constant="2" id="d6f-oO-H9j"/>
+                    <constraint firstItem="pdS-RD-0F9" firstAttribute="leading" secondItem="PLM-wI-lb8" secondAttribute="trailing" constant="3" id="iIK-lf-Aeq"/>
+                    <constraint firstItem="z66-Gn-V5Z" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="io9-6q-dZN"/>
+                    <constraint firstAttribute="trailing" secondItem="9xJ-N5-ZEv" secondAttribute="trailing" id="mJO-jv-Gop"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentTextView" destination="z66-Gn-V5Z" id="aAa-DR-yP0"/>
+                <outlet property="defaultButton" destination="PLM-wI-lb8" id="6r9-NI-UbI"/>
+                <outlet property="defaultLabel" destination="pdS-RD-0F9" id="iLi-V3-bL3"/>
+            </connections>
+            <point key="canvasLocation" x="57" y="121"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_mian_default_address" width="21" height="21"/>
+    </resources>
+</document>

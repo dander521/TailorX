@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16D30" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TXPayBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="430" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6hp-G9-F8F">
+                    <rect key="frame" x="0.0" y="0.0" width="430" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="diV-oh-TU8">
+                    <rect key="frame" x="286.5" y="0.0" width="143.5" height="50"/>
+                    <color key="backgroundColor" red="0.96470588235294119" green="0.18431372549019609" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="AHf-XG-4Zq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="结算">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="touchPayButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Yur-oZ-c2y"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRA-fX-QhY">
+                    <rect key="frame" x="0.0" y="6.5" width="38" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="QJB-nK-e3w"/>
+                        <constraint firstAttribute="width" constant="38" id="tHn-fM-0UL"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <state key="normal" image="ic_mian_select_no"/>
+                    <connections>
+                        <action selector="touchSelectedButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="6S9-yh-0cu"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="全选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Dz-Cy-3FF">
+                    <rect key="frame" x="38" y="16.5" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.42352941176470588" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Rm-JU-Od7">
+                    <rect key="frame" x="245.5" y="5" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="7PF-6e-pFt"/>
+                        <constraint firstAttribute="height" constant="40" id="CIk-jP-EUZ"/>
+                    </constraints>
+                    <state key="normal" image="ic_tab_information"/>
+                    <connections>
+                        <action selector="touchAppointmentButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="ErM-Aw-MDJ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 300" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOn-Xm-JSR">
+                    <rect key="frame" x="189.5" y="13" width="55" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.96470588239999999" green="0.1843137255" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="实付款:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGU-Gv-q6v">
+                    <rect key="frame" x="134.5" y="16" width="47" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cOn-Xm-JSR" firstAttribute="leading" secondItem="UGU-Gv-q6v" secondAttribute="trailing" constant="8" id="0I0-vw-sG9"/>
+                <constraint firstItem="diV-oh-TU8" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="1:3" id="1YI-om-uwN"/>
+                <constraint firstItem="diV-oh-TU8" firstAttribute="leading" secondItem="5Rm-JU-Od7" secondAttribute="trailing" constant="1" id="6x4-bJ-kIn"/>
+                <constraint firstItem="3Dz-Cy-3FF" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9yS-s0-qDQ"/>
+                <constraint firstAttribute="bottom" secondItem="6hp-G9-F8F" secondAttribute="bottom" id="CO7-DI-TW6"/>
+                <constraint firstItem="diV-oh-TU8" firstAttribute="leading" secondItem="cOn-Xm-JSR" secondAttribute="trailing" priority="750" constant="8" id="FBT-K8-9FK"/>
+                <constraint firstItem="DRA-fX-QhY" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KyZ-1p-P6R"/>
+                <constraint firstItem="6hp-G9-F8F" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="LNT-2V-tVq"/>
+                <constraint firstItem="5Rm-JU-Od7" firstAttribute="centerY" secondItem="diV-oh-TU8" secondAttribute="centerY" id="N1D-5e-tcP"/>
+                <constraint firstItem="UGU-Gv-q6v" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Rid-Rm-SLc"/>
+                <constraint firstItem="3Dz-Cy-3FF" firstAttribute="leading" secondItem="DRA-fX-QhY" secondAttribute="trailing" id="aV4-Ql-rk1"/>
+                <constraint firstItem="diV-oh-TU8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="abl-ex-DjH"/>
+                <constraint firstAttribute="trailing" secondItem="diV-oh-TU8" secondAttribute="trailing" id="fEm-eh-Enu"/>
+                <constraint firstItem="DRA-fX-QhY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hEi-SO-7Sp"/>
+                <constraint firstItem="6hp-G9-F8F" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iMC-9t-GbI"/>
+                <constraint firstItem="cOn-Xm-JSR" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="iwt-SG-mFX"/>
+                <constraint firstAttribute="trailing" secondItem="6hp-G9-F8F" secondAttribute="trailing" id="m9S-6C-iye"/>
+                <constraint firstItem="5Rm-JU-Od7" firstAttribute="leading" secondItem="cOn-Xm-JSR" secondAttribute="trailing" constant="1" id="rVb-Kv-AxB"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="accountLabel" destination="cOn-Xm-JSR" id="exK-vF-ngw"/>
+                <outlet property="allSelectButton" destination="DRA-fX-QhY" id="xTY-D9-jmm"/>
+                <outlet property="allSelectLabel" destination="3Dz-Cy-3FF" id="Euq-MY-SeU"/>
+                <outlet property="appointmentButton" destination="5Rm-JU-Od7" id="zMm-nJ-MUU"/>
+                <outlet property="payDescriptionLabel" destination="UGU-Gv-q6v" id="HfW-EO-3uj"/>
+                <outlet property="shadowView" destination="6hp-G9-F8F" id="RJC-wS-Rxz"/>
+                <outlet property="submitButton" destination="diV-oh-TU8" id="P2I-ny-2Cc"/>
+            </connections>
+            <point key="canvasLocation" x="-2183" y="88"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_mian_select_no" width="21" height="21"/>
+        <image name="ic_tab_information" width="15" height="15"/>
+    </resources>
+</document>
